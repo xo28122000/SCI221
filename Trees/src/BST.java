@@ -22,9 +22,9 @@ System.out.println("Congrats! You've added" + val);
 
     public void delete(int val) {
  if (root == null)  return root; 
-        if (val < root.key) 
+        if (val < root.val) 
             root.left = delete(root.left, val); 
-        else if (va; > root.val) 
+        else if (val > root.val) 
             root.right = delete(root.right, val); 
         
         return root; 
